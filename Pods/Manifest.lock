@@ -17,6 +17,7 @@ PODS:
   - Bricks (0.1.2)
   - bricks-Mantle (0.1.1):
     - Mantle (~> 2.0.7)
+  - IQKeyboardManager (5.0.7)
   - libextobjc (0.4.1):
     - libextobjc/EXTADT (= 0.4.1)
     - libextobjc/EXTConcreteProtocol (= 0.4.1)
@@ -66,6 +67,7 @@ DEPENDENCIES:
   - AFNetworking
   - Bricks
   - bricks-Mantle
+  - IQKeyboardManager
   - libextobjc
   - MTLManagedObjectAdapter
   - ObjectiveSugar
@@ -74,11 +76,12 @@ SPEC CHECKSUMS:
   AFNetworking: 8ac6017b94ea105479f7776e5288e48ae9c59bb4
   Bricks: c380078646ec88de088a43d2e81a6b26f7e560e7
   bricks-Mantle: c972181ab1006b0dbbfd6bb2e76170a121c6df39
+  IQKeyboardManager: 0bfa4607d39924116b5c0c8b55b5d789288b5cba
   libextobjc: a650fc1bf489a3d3a9bc2e621efa3e1006fc5471
   Mantle: bc40bb061d8c2c6fb48d5083e04d928c3b7f73d9
   MTLManagedObjectAdapter: 631a53432675dcf03a9d90624afb3cececf54631
   ObjectiveSugar: a6a25f23d657c19df0a0b972466d5b5ca9f5295c
 
-PODFILE CHECKSUM: 8dd7cb10ef017eba9452d7f276f0ea56f3495bf0
+PODFILE CHECKSUM: 643c0795ebe6515c8bb60eddc85d6036ac409d96
 
 COCOAPODS: 1.4.0

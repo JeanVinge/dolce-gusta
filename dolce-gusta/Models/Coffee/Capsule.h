@@ -14,5 +14,7 @@
 @property (nonatomic, copy) NSString *imageURL;
 @property (nonatomic, copy) NSNumber *seconds;
 @property (nonatomic, copy) NSString *instructions;
+
+- (instancetype)initWithName:(NSString *)name imageURL:(NSString *)imageURL instructions:(NSString *)instructions;
     
 @end

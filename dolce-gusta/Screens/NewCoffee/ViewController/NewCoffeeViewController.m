@@ -10,8 +10,18 @@
 
 @interface NewCoffeeViewController ()
 
+@property (weak, nonatomic) IBOutlet UITextField *textField;
+
 @end
 
 @implementation NewCoffeeViewController
+
+- (IBAction)onTapSend:(UIBarButtonItem *)sender {
+    
+    Coffee *coffe = [[Coffee alloc] initWithName:self.textField.text];
+    self.completion(coffe);
+    
+    [self.navigationController popViewControllerAnimated:YES];
+}
 
 @end

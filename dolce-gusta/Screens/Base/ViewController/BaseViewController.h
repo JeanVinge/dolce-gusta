@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <libextobjc/EXTScope.h>
+#import "GlobalTypeDef.h"
 
 @interface BaseViewController : UIViewController
 

@@ -13,4 +13,6 @@
 @property (nonatomic, copy) NSString *name;
 @property (nonatomic, copy) NSArray *capsules;
 
+- (instancetype)initWithName:(NSString *)name;
+
 @end

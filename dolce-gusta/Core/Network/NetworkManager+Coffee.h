@@ -7,9 +7,8 @@
 //
 
 #import "NetworkManager.h"
-#import "CoffeeList.h"
 
 @interface NetworkManager (Coffee)
 
-+ (void)fetchCategoryWithCompletionHandler:(void (^)(CoffeeList *))completionBlock failure:(void (^)(id, NSError *))failedBlock;
++ (void)fetchListWithSuccess:(CoffeeListCompletion)success failure:(FailureCompletion)failure;
 @end

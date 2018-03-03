@@ -18,23 +18,33 @@ NSString * const kBaseURLString = @"http://private-5a78d1-dolcegusta.apiary-mock
     return [super initWithBaseURL:[NSURL URLWithString:kBaseURLString]];;
 }
 
-+ (void)requestHTTPType:(HTTPRequestType)httpType URLPath:(NSString *)path parameters:(NSDictionary *)parameters success:(void (^)(id, id))completionBlock failure:(void (^)(id, NSError *))failed {
++ (void)requestHTTPType:(HTTPRequestType)httpType URLPath:(NSString *)path parameters:(NSDictionary *)parameters success:(GenericTwoCompletion)success failure:(FailureCompletion)failure {
     
     if (httpType == kGetHTTPRequestType) {
-        
         [[[NetworkManager alloc] init] GET:path parameters:parameters success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-            completionBlock(task, responseObject);
+            success(task, responseObject);
         } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-            failed(task, error);
+            failure(task, error);
         }];
         
     } else if (httpType == kPostHTTPRequestType) {
-        
         [[[NetworkManager alloc] init] POST:path parameters:parameters success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-            completionBlock(task, responseObject);
+            success(task, responseObject);
         } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-            failed(task, error);
+            failure(task, error);
         }];
+    }
+}
+
++ (void)handleResponse:(NSURLSessionDataTask *)task response:(id)responseObject completionHandler:(GenericCompletion)completion {
+    if (completion) {
+        if ([responseObject isKindOfClass:[NSDictionary class]]) {
+            NSDictionary *responseDict = (NSDictionary *)responseObject;
+            completion(responseDict);
+        } else if ([responseObject isKindOfClass:[NSArray class]]) {
+            NSArray *responseDict = (NSArray *)responseObject;
+            completion(responseDict);
+        }
     }
 }
 

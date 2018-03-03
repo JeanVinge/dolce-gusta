@@ -7,6 +7,7 @@
 //
 
 #import <AFHTTPSessionManager.h>
+#import "GlobalTypeDef.h"
 
 typedef NS_ENUM(NSInteger, HTTPRequestType) {
     kGetHTTPRequestType,
@@ -15,8 +16,8 @@ typedef NS_ENUM(NSInteger, HTTPRequestType) {
 
 @interface NetworkManager : AFHTTPSessionManager
 
-+ (void)requestHTTPType:(HTTPRequestType)httpType URLPath:(NSString *)path
-             parameters:(NSDictionary *)parameters
-                success:(void (^)(id, id))completionBlock
-                failure:(void (^)(id, NSError *error))failed;
++ (void)requestHTTPType:(HTTPRequestType)httpType URLPath:(NSString *)path parameters:(NSDictionary *)parameters success:(GenericTwoCompletion)success failure:(FailureCompletion)failure;
+
++ (void)handleResponse:(NSURLSessionDataTask *)task response:(id)responseObject completionHandler:(GenericCompletion)completion;
+
 @end

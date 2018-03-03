@@ -10,4 +10,15 @@
 
 @implementation Capsule
 
+- (instancetype)initWithName:(NSString *)name imageURL:(NSString *)imageURL instructions:(NSString *)instructions {
+    
+    self = [super init];
+    if (self) {
+        self.name = name;
+        self.imageURL = imageURL;
+        self.instructions = instructions;
+    }
+    return self;
+}
+
 @end

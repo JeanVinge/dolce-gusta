@@ -26,6 +26,19 @@
 		3914D5952049E19C00B8FD2F /* BaseMantle.m in Sources */ = {isa = PBXBuildFile; fileRef = 3914D5942049E19C00B8FD2F /* BaseMantle.m */; };
 		3914D59F2049E7D600B8FD2F /* NewCoffeeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3914D59E2049E7D600B8FD2F /* NewCoffeeViewController.m */; };
 		3914D5A32049E7F200B8FD2F /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3914D5A22049E7F200B8FD2F /* BaseViewController.m */; };
+		39891DF72049ECB300A9649E /* CapsuleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39891DF62049ECB300A9649E /* CapsuleViewController.m */; };
+		39891DFC2049ECCC00A9649E /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39891DFB2049ECCC00A9649E /* DetailViewController.m */; };
+		39891E012049EE1A00A9649E /* MainCollectionProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 39891E002049EE1A00A9649E /* MainCollectionProvider.m */; };
+		39891E062049F10900A9649E /* CoffeeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 39891E042049F10900A9649E /* CoffeeCell.m */; };
+		39891E072049F10900A9649E /* CoffeeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39891E052049F10900A9649E /* CoffeeCell.xib */; };
+		39891E0C2049F54000A9649E /* BaseCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 39891E0B2049F54000A9649E /* BaseCollectionView.m */; };
+		39891E102049F6BA00A9649E /* UICollectionView+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 39891E0F2049F6BA00A9649E /* UICollectionView+Category.m */; };
+		39891E152049FD7F00A9649E /* CapsuleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 39891E132049FD7F00A9649E /* CapsuleCell.m */; };
+		39891E162049FD7F00A9649E /* CapsuleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39891E142049FD7F00A9649E /* CapsuleCell.xib */; };
+		39891E1A2049FDA900A9649E /* CapsuleCollectionProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 39891E192049FDA900A9649E /* CapsuleCollectionProvider.m */; };
+		39891E1D2049FEDD00A9649E /* UIViewController+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 39891E1C2049FEDD00A9649E /* UIViewController+Category.m */; };
+		39891E21204A0B0F00A9649E /* BaseCollectionProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 39891E20204A0B0F00A9649E /* BaseCollectionProvider.m */; };
+		39891E26204A19F800A9649E /* NewCapsuleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39891E25204A19F800A9649E /* NewCapsuleViewController.m */; };
 		4C2FDD0577778D308CBF2E51 /* libPods-dolce-gusta.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 342087DFEA3333F4E588A1E3 /* libPods-dolce-gusta.a */; };
 		56C2B4948C760DD80D8FD335 /* libPods-dolce-gustaTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FF4D96FF1353306279F8F7F9 /* libPods-dolce-gustaTests.a */; };
 		F0E6F94125A01953B6D166F8 /* libPods-dolce-gustaUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 242CF8593D47145F7723959D /* libPods-dolce-gustaUITests.a */; };
@@ -89,6 +102,31 @@
 		3914D59E2049E7D600B8FD2F /* NewCoffeeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewCoffeeViewController.m; sourceTree = "<group>"; };
 		3914D5A12049E7F200B8FD2F /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		3914D5A22049E7F200B8FD2F /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		39891DF52049ECB300A9649E /* CapsuleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CapsuleViewController.h; sourceTree = "<group>"; };
+		39891DF62049ECB300A9649E /* CapsuleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CapsuleViewController.m; sourceTree = "<group>"; };
+		39891DFA2049ECCC00A9649E /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		39891DFB2049ECCC00A9649E /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		39891DFF2049EE1A00A9649E /* MainCollectionProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainCollectionProvider.h; sourceTree = "<group>"; };
+		39891E002049EE1A00A9649E /* MainCollectionProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainCollectionProvider.m; sourceTree = "<group>"; };
+		39891E032049F10900A9649E /* CoffeeCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoffeeCell.h; sourceTree = "<group>"; };
+		39891E042049F10900A9649E /* CoffeeCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoffeeCell.m; sourceTree = "<group>"; };
+		39891E052049F10900A9649E /* CoffeeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoffeeCell.xib; sourceTree = "<group>"; };
+		39891E0A2049F54000A9649E /* BaseCollectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseCollectionView.h; sourceTree = "<group>"; };
+		39891E0B2049F54000A9649E /* BaseCollectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseCollectionView.m; sourceTree = "<group>"; };
+		39891E0E2049F6BA00A9649E /* UICollectionView+Category.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+Category.h"; sourceTree = "<group>"; };
+		39891E0F2049F6BA00A9649E /* UICollectionView+Category.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+Category.m"; sourceTree = "<group>"; };
+		39891E122049FD7F00A9649E /* CapsuleCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CapsuleCell.h; sourceTree = "<group>"; };
+		39891E132049FD7F00A9649E /* CapsuleCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CapsuleCell.m; sourceTree = "<group>"; };
+		39891E142049FD7F00A9649E /* CapsuleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CapsuleCell.xib; sourceTree = "<group>"; };
+		39891E182049FDA900A9649E /* CapsuleCollectionProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CapsuleCollectionProvider.h; sourceTree = "<group>"; };
+		39891E192049FDA900A9649E /* CapsuleCollectionProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CapsuleCollectionProvider.m; sourceTree = "<group>"; };
+		39891E1B2049FEDD00A9649E /* UIViewController+Category.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Category.h"; sourceTree = "<group>"; };
+		39891E1C2049FEDD00A9649E /* UIViewController+Category.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Category.m"; sourceTree = "<group>"; };
+		39891E1F204A0B0F00A9649E /* BaseCollectionProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseCollectionProvider.h; sourceTree = "<group>"; };
+		39891E20204A0B0F00A9649E /* BaseCollectionProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseCollectionProvider.m; sourceTree = "<group>"; };
+		39891E24204A19F800A9649E /* NewCapsuleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewCapsuleViewController.h; sourceTree = "<group>"; };
+		39891E25204A19F800A9649E /* NewCapsuleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewCapsuleViewController.m; sourceTree = "<group>"; };
+		39891E27204A24CE00A9649E /* GlobalTypeDef.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlobalTypeDef.h; sourceTree = "<group>"; };
 		9E8A5CEAD799F0E08755AA41 /* Pods-dolce-gustaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dolce-gustaUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-dolce-gustaUITests/Pods-dolce-gustaUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A59BF8E64166297777AB44E7 /* Pods-dolce-gustaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dolce-gustaUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-dolce-gustaUITests/Pods-dolce-gustaUITests.release.xcconfig"; sourceTree = "<group>"; };
 		ACF2344D5DC8706344454160 /* Pods-dolce-gusta.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dolce-gusta.debug.xcconfig"; path = "Pods/Target Support Files/Pods-dolce-gusta/Pods-dolce-gusta.debug.xcconfig"; sourceTree = "<group>"; };
@@ -163,6 +201,7 @@
 		3914D4F220497F1000B8FD2F /* dolce-gusta */ = {
 			isa = PBXGroup;
 			children = (
+				39891E0D2049F68600A9649E /* Categories */,
 				3914D52B204986E900B8FD2F /* Core */,
 				3914D52A204986DE00B8FD2F /* Screens */,
 				3914D529204986D800B8FD2F /* Models */,
@@ -240,6 +279,9 @@
 		3914D52A204986DE00B8FD2F /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				39891E22204A19E100A9649E /* NewCapsule */,
+				39891DF82049ECBB00A9649E /* Detail */,
+				39891DF32049EC9300A9649E /* Capsules */,
 				3914D5A02049E7E600B8FD2F /* Base */,
 				3914D59B2049E7C000B8FD2F /* NewCoffee */,
 				3914D5992049E6D200B8FD2F /* Main */,
@@ -250,6 +292,7 @@
 		3914D52B204986E900B8FD2F /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				39891E28204A2FAA00A9649E /* Global */,
 				3914D5792049BAFB00B8FD2F /* Network */,
 				3914D5312049B2F900B8FD2F /* Persistence */,
 			);
@@ -311,6 +354,8 @@
 		3914D5992049E6D200B8FD2F /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				39891E022049F0E000A9649E /* View */,
+				39891DFE2049EDFA00A9649E /* Provider */,
 				3914D59A2049E6DB00B8FD2F /* ViewController */,
 			);
 			path = Main;
@@ -345,6 +390,8 @@
 		3914D5A02049E7E600B8FD2F /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				39891E1E204A0AF800A9649E /* Provider */,
+				39891E082049F45400A9649E /* Views */,
 				3914D5A42049E7F600B8FD2F /* ViewController */,
 			);
 			path = Base;
@@ -357,6 +404,134 @@
 				3914D5A22049E7F200B8FD2F /* BaseViewController.m */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		39891DF32049EC9300A9649E /* Capsules */ = {
+			isa = PBXGroup;
+			children = (
+				39891E172049FD8300A9649E /* Provider */,
+				39891E112049FD5D00A9649E /* View */,
+				39891DF42049EC9F00A9649E /* ViewController */,
+			);
+			path = Capsules;
+			sourceTree = "<group>";
+		};
+		39891DF42049EC9F00A9649E /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				39891DF52049ECB300A9649E /* CapsuleViewController.h */,
+				39891DF62049ECB300A9649E /* CapsuleViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		39891DF82049ECBB00A9649E /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				39891DF92049ECC000A9649E /* ViewController */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		39891DF92049ECC000A9649E /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				39891DFA2049ECCC00A9649E /* DetailViewController.h */,
+				39891DFB2049ECCC00A9649E /* DetailViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		39891DFE2049EDFA00A9649E /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				39891DFF2049EE1A00A9649E /* MainCollectionProvider.h */,
+				39891E002049EE1A00A9649E /* MainCollectionProvider.m */,
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
+		39891E022049F0E000A9649E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				39891E032049F10900A9649E /* CoffeeCell.h */,
+				39891E042049F10900A9649E /* CoffeeCell.m */,
+				39891E052049F10900A9649E /* CoffeeCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		39891E082049F45400A9649E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				39891E0A2049F54000A9649E /* BaseCollectionView.h */,
+				39891E0B2049F54000A9649E /* BaseCollectionView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		39891E0D2049F68600A9649E /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				39891E0E2049F6BA00A9649E /* UICollectionView+Category.h */,
+				39891E0F2049F6BA00A9649E /* UICollectionView+Category.m */,
+				39891E1B2049FEDD00A9649E /* UIViewController+Category.h */,
+				39891E1C2049FEDD00A9649E /* UIViewController+Category.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		39891E112049FD5D00A9649E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				39891E122049FD7F00A9649E /* CapsuleCell.h */,
+				39891E132049FD7F00A9649E /* CapsuleCell.m */,
+				39891E142049FD7F00A9649E /* CapsuleCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		39891E172049FD8300A9649E /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				39891E182049FDA900A9649E /* CapsuleCollectionProvider.h */,
+				39891E192049FDA900A9649E /* CapsuleCollectionProvider.m */,
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
+		39891E1E204A0AF800A9649E /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				39891E1F204A0B0F00A9649E /* BaseCollectionProvider.h */,
+				39891E20204A0B0F00A9649E /* BaseCollectionProvider.m */,
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
+		39891E22204A19E100A9649E /* NewCapsule */ = {
+			isa = PBXGroup;
+			children = (
+				39891E23204A19E900A9649E /* ViewController */,
+			);
+			path = NewCapsule;
+			sourceTree = "<group>";
+		};
+		39891E23204A19E900A9649E /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				39891E24204A19F800A9649E /* NewCapsuleViewController.h */,
+				39891E25204A19F800A9649E /* NewCapsuleViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		39891E28204A2FAA00A9649E /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				39891E27204A24CE00A9649E /* GlobalTypeDef.h */,
+			);
+			path = Global;
 			sourceTree = "<group>";
 		};
 		B250268873966982196ECFC6 /* Frameworks */ = {
@@ -487,6 +662,8 @@
 				3914D50020497F1000B8FD2F /* LaunchScreen.storyboard in Resources */,
 				3914D4FD20497F1000B8FD2F /* Assets.xcassets in Resources */,
 				3914D4FB20497F1000B8FD2F /* Main.storyboard in Resources */,
+				39891E072049F10900A9649E /* CoffeeCell.xib in Resources */,
+				39891E162049FD7F00A9649E /* CapsuleCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -548,10 +725,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-dolce-gusta/Pods-dolce-gusta-resources.sh",
 				"${PODS_CONFIGURATION_BUILD_DIR}/Bricks/Bricks.bundle",
+				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Bricks.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IQKeyboardManager.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -662,19 +841,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				3914D57D2049BB0B00B8FD2F /* NetworkManager.m in Sources */,
+				39891E152049FD7F00A9649E /* CapsuleCell.m in Sources */,
 				3914D4F820497F1000B8FD2F /* ViewController.m in Sources */,
+				39891E26204A19F800A9649E /* NewCapsuleViewController.m in Sources */,
 				3914D50320497F1000B8FD2F /* main.m in Sources */,
+				39891E012049EE1A00A9649E /* MainCollectionProvider.m in Sources */,
+				39891E21204A0B0F00A9649E /* BaseCollectionProvider.m in Sources */,
+				39891DFC2049ECCC00A9649E /* DetailViewController.m in Sources */,
 				3914D5372049B32700B8FD2F /* CoreDataOperations.m in Sources */,
 				3914D4F520497F1000B8FD2F /* AppDelegate.m in Sources */,
 				3914D5A32049E7F200B8FD2F /* BaseViewController.m in Sources */,
 				3914D58C2049CB6900B8FD2F /* Coffee.m in Sources */,
 				3914D59F2049E7D600B8FD2F /* NewCoffeeViewController.m in Sources */,
 				3914D58B2049CB6900B8FD2F /* Capsule.m in Sources */,
+				39891E1A2049FDA900A9649E /* CapsuleCollectionProvider.m in Sources */,
 				3914D5362049B32700B8FD2F /* CoreDataManager.m in Sources */,
+				39891E102049F6BA00A9649E /* UICollectionView+Category.m in Sources */,
+				39891E0C2049F54000A9649E /* BaseCollectionView.m in Sources */,
 				3914D52E2049A48000B8FD2F /* Model.xcdatamodeld in Sources */,
 				3914D58F2049D86200B8FD2F /* CoffeeList.m in Sources */,
 				3914D5922049DA9D00B8FD2F /* NetworkManager+Coffee.m in Sources */,
+				39891DF72049ECB300A9649E /* CapsuleViewController.m in Sources */,
+				39891E1D2049FEDD00A9649E /* UIViewController+Category.m in Sources */,
 				3914D5952049E19C00B8FD2F /* BaseMantle.m in Sources */,
+				39891E062049F10900A9649E /* CoffeeCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

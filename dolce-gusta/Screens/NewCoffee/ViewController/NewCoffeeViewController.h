@@ -10,4 +10,6 @@
 
 @interface NewCoffeeViewController : BaseViewController
 
+@property (nonatomic, copy) CoffeeCompletion completion;
+
 @end

@@ -7,6 +7,7 @@ target 'dolce-gusta' do
 
   # Pods for dolce-gusta
 
+   pod 'IQKeyboardManager'
    pod 'bricks-Mantle'
    pod 'Bricks'
    pod 'libextobjc'

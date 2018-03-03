@@ -9,15 +9,15 @@
     </entity>
     <entity name="Coffee" syncable="YES">
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="capsules" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Capsule" inverseName="capsule" inverseEntity="Capsule" syncable="YES"/>
+        <relationship name="capsules" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Capsule" inverseName="capsule" inverseEntity="Capsule" syncable="YES"/>
         <relationship name="coffee" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CoffeeList" inverseName="coffees" inverseEntity="CoffeeList" syncable="YES"/>
     </entity>
     <entity name="CoffeeList" syncable="YES">
-        <relationship name="coffees" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Coffee" inverseName="coffee" inverseEntity="Coffee" syncable="YES"/>
+        <relationship name="coffees" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Coffee" inverseName="coffee" inverseEntity="Coffee" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Coffee" positionX="-63" positionY="-18" width="128" height="90"/>
         <element name="Capsule" positionX="-54" positionY="-9" width="128" height="120"/>
+        <element name="Coffee" positionX="-63" positionY="-18" width="128" height="90"/>
         <element name="CoffeeList" positionX="-45" positionY="54" width="128" height="60"/>
     </elements>
 </model>

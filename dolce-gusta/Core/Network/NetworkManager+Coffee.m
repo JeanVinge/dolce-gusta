@@ -8,33 +8,27 @@
 
 #import "NetworkManager+Coffee.h"
 
-#define URL_PATH_LIST (@"list")
+#define kPathList (@"list")
 
 @implementation NetworkManager (Coffee)
 
-    + (void)fetchCategoryWithCompletionHandler:(void (^)(CoffeeList *))completionBlock failure:(void (^)(id, NSError *))failedBlock
-    {
-        [self requestHTTPType:kGetHTTPRequestType URLPath:URL_PATH_LIST parameters:nil success:^(id task, id responseObject) {
-            [self handleResponse:task response:responseObject completionHandler:^(id object) {
++ (void)fetchListWithSuccess:(CoffeeListCompletion)success failure:(FailureCompletion)failure {
+        [self requestHTTPType:kGetHTTPRequestType URLPath:kPathList parameters:nil success:^(id task, id responseObject) {
+            [NetworkManager handleResponse:task response:responseObject completionHandler:^(id object) {
+                
                 NSError *error;
                 CoffeeList *list = [CoffeeList parse:responseObject error:&error];
                 
-                completionBlock(list);
+                if (error == nil) {
+                    success(list);
+                } else {
+                    failure(task, error);
+                }
             }];
             
         } failure:^(id operation, NSError *error) {
-            failedBlock(operation, error);
+            failure(operation, error);
         }];
-    }
-    
-+ (void)handleResponse:(NSURLSessionDataTask *)task response:(id)responseObject completionHandler:(void (^)(id object))completionBlock
-    {
-        if (completionBlock) {
-            if ([responseObject isKindOfClass:[NSDictionary class]]) {
-                NSDictionary *responseDict = (NSDictionary *)responseObject;
-                completionBlock(responseDict);
-            }
-        }
     }
 
 @end

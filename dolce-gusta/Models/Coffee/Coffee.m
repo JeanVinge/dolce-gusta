@@ -10,6 +10,16 @@
 #import "Capsule.h"
 
 @implementation Coffee
+
+- (instancetype)initWithName:(NSString *)name
+{
+    self = [super init];
+    if (self) {
+        self.capsules = [NSArray new];
+        self.name = name;
+    }
+    return self;
+}
     
 + (NSValueTransformer *)capsulesJSONTransformer {
     return [MTLJSONAdapter arrayTransformerWithModelClass:Capsule.class];

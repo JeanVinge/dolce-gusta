@@ -17,10 +17,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [self initComponents];
     [self refreshAPI];
 }
 
 - (void)refreshAPI {
+}
+
+- (void)initComponents {
 }
     
 @end
