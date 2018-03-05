@@ -7,8 +7,13 @@
 //
 
 #import "BaseViewController.h"
+#import "TextFieldView.h"
+#import "BlueButton.h"
 
 @interface NewCoffeeViewController : BaseViewController
+
+@property (weak, nonatomic) IBOutlet TextFieldView *textFieldView;
+@property (weak, nonatomic) IBOutlet BlueButton *button;
 
 @property (nonatomic, copy) CoffeeCompletion completion;
 

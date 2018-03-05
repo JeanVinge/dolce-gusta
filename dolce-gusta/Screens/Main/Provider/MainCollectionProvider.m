@@ -18,8 +18,19 @@
 
     Coffee *coffee = (Coffee *) self.list[indexPath.row];
     
+    if ([coffee.capsules isKindOfClass:[NSSet class]]) {
+        coffee.capsules = [((NSSet *) coffee.capsules) allObjects];
+    }
+    
     CapsuleViewController *controller = [CapsuleViewController fromStoryboard];
     controller.capsules = coffee.capsules;
+    
+    @weakify(self);
+    controller.completion = ^(NSArray *capsules, int index) {
+        @strongify(self);
+        
+        [self.list[index] setCapsules:capsules];
+    };
     
     [self.controller showViewController:controller sender:nil];
 }
@@ -27,7 +38,7 @@
 #pragma mark - UICollectionViewDelegateFlowLayout
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
-    return CGSizeMake(collectionView.frame.size.width, 40);
+    return CGSizeMake(collectionView.frame.size.width, 70);
 }
 
 @end

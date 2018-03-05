@@ -11,5 +11,7 @@
 @interface CapsuleViewController : ViewController
 
 @property (nonatomic, strong) NSArray *capsules;
+@property (nonatomic) int index;
+@property (nonatomic, copy) CapsuleListCompletion completion;
 
 @end

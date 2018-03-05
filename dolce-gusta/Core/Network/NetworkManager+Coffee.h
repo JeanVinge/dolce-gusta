@@ -10,5 +10,6 @@
 
 @interface NetworkManager (Coffee)
 
-+ (void)fetchListWithSuccess:(CoffeeListCompletion)success failure:(FailureCompletion)failure;
++ (void)fetchListForceReload:(BOOL)forceReload success:(CoffeeListCompletion)success failure:(FailureCompletion)failure;
+
 @end

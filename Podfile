@@ -14,6 +14,8 @@ target 'dolce-gusta' do
    pod 'ObjectiveSugar'
    pod 'AFNetworking'
    pod 'MTLManagedObjectAdapter'
+   pod 'SFRoundProgressCounterView'
+   pod 'SDWebImage', '~> 4.0'
 
   target 'dolce-gustaTests' do
     inherit! :search_paths

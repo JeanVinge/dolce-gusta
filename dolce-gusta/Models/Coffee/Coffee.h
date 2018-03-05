@@ -10,6 +10,7 @@
 
 @interface Coffee : BaseMantle
 
+@property (nonatomic, copy) NSString *idcof;
 @property (nonatomic, copy) NSString *name;
 @property (nonatomic, copy) NSArray *capsules;
 

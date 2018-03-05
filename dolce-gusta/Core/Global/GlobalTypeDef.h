@@ -11,8 +11,9 @@
 #import "CoffeeList.h"
 
 typedef void (^CoffeeListCompletion)(CoffeeList *);
-typedef void(^CoffeeCompletion)(Coffee *);
-typedef void(^CapsuleCompletion)(Capsule *);
-typedef void(^FailureCompletion)(id, NSError *);
-typedef void (^GenericCompletion)(id object);
+typedef void (^CapsuleListCompletion)(NSArray *, int);
+typedef void (^CoffeeCompletion)(Coffee *);
+typedef void (^CapsuleCompletion)(Capsule *);
+typedef void (^FailureCompletion)(id, NSError *);
+typedef void (^GenericCompletion)(id);
 typedef void (^GenericTwoCompletion)(id, id);

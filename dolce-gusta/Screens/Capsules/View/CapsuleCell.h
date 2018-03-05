@@ -7,9 +7,14 @@
 //
 
 #import "BKBaseCollectionViewCell.h"
+#import "TitleLabel.h"
+#import "SubtitleLabel.h"
+#import "BaseImageView.h"
 
 @interface CapsuleCell : BKBaseCollectionViewCell
 
-@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+@property (weak, nonatomic) IBOutlet TitleLabel *titleLabel;
+@property (weak, nonatomic) IBOutlet BaseImageView *imageView;
+@property (weak, nonatomic) IBOutlet SubtitleLabel *subtitleLabel;
 
 @end

@@ -8,7 +8,6 @@
 
 #import "ViewController.h"
 #import "NetworkManager+Coffee.h"
-#import "CoreDataOperations.h"
 #import "MainCollectionProvider.h"
 #import "BaseCollectionView.h"
 #import "CoffeeCell.h"
@@ -24,14 +23,21 @@
 @implementation ViewController
 
 - (void)initComponents {
+    
+    self.title = @"Coffee List";
+    
     self.provider = [[MainCollectionProvider alloc] initWithModelController:self collectionView:self.collectionView withClass:[CoffeeCell self]];
 }
-    
-- (void)refreshAPI {
+
+- (void)refreshAPIForceReload:(BOOL)forceReload {
     
     @weakify(self);
-    [NetworkManager fetchListWithSuccess:^(CoffeeList *list) {
+    [NetworkManager fetchListForceReload:forceReload success:^(CoffeeList *list) {
         @strongify(self);
+        
+        if ([list.coffees isKindOfClass:[NSSet class]]) {
+            list.coffees = [((NSSet *) list.coffees) allObjects];
+        }
         
         [self.provider refresh:list.coffees];
     } failure:^(id task, NSError *error) {
@@ -54,15 +60,4 @@
     
     [self showViewController:controller sender:nil];
 }
-
-#pragma mark - save data
-    
-- (void)save:(CoffeeList *)list {
-    [CoreDataOperations saveModel:list];
-}
-    
-#pragma mark - fetch data
-    
-#pragma mark - delete data
-    
 @end

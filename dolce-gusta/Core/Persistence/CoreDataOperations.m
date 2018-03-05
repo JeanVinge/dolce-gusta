@@ -13,13 +13,13 @@
 
 @implementation CoreDataOperations
 
-#pragma mark -
 #pragma mark - Public Methods
 
-+ (instancetype)shareInstance
-{
++ (instancetype)shareInstance {
+    
     static CoreDataOperations *instance = nil;
     static dispatch_once_t onceToken;
+    
     dispatch_once(&onceToken, ^{
         instance = [[self alloc] init];
     });
@@ -27,11 +27,7 @@
     return instance;
 }
 
-/*
- * Save operations
- */
-+ (void)saveModels:(NSArray *)models
-{
++ (void)saveModels:(NSArray *)models {
     for (MTLModel<MTLManagedObjectSerializing> *model in models) {
         [[CoreDataOperations shareInstance] createEntityInContext:[CoreDataManager shareInstance].managedObjectContext data:model];
     }
@@ -39,17 +35,12 @@
     [[CoreDataManager shareInstance] saveContext];
 }
 
-+ (void)saveModel:(MTLModel<MTLManagedObjectSerializing> *)model
-{
++ (void)saveModel:(MTLModel<MTLManagedObjectSerializing> *)model {
     [[CoreDataOperations shareInstance] createEntityInContext:[CoreDataManager shareInstance].managedObjectContext data:model];
     [[CoreDataManager shareInstance] saveContext];
 }
 
-/*
- * Delete operations
- */
-+ (void)deleteAllByModel:(MTLModel<MTLManagedObjectSerializing> *)model
-{
++ (void)deleteAllByModel:(MTLModel<MTLManagedObjectSerializing> *)model {
     NSManagedObjectContext *context = [CoreDataManager shareInstance].managedObjectContext;
     NSError *error = nil;
     NSArray *array = [context executeFetchRequest:[[CoreDataOperations shareInstance] fetchRequest:model] error:&error];
@@ -61,8 +52,8 @@
     [context save:nil];
 }
 
-+ (void)deleteModels:(NSArray *)models
-{
++ (void)deleteModels:(NSArray *)models {
+    
     if (models.count == 0) return;
     
     NSManagedObjectContext *context = [CoreDataManager shareInstance].managedObjectContext;
@@ -85,45 +76,31 @@
     [context save:nil];
 }
 
-/*
- * Query operations
- */
-+ (NSArray *)queryModelsByModel:(MTLModel<MTLManagedObjectSerializing> *)model
-{
++ (__kindof MTLModel<MTLManagedObjectSerializing> *)queryFirstByModel:(MTLModel<MTLManagedObjectSerializing> *)model {
+    
     NSError *error = nil;
     
-    NSArray *datas = [[CoreDataManager shareInstance].managedObjectContext executeFetchRequest:[[CoreDataOperations shareInstance] fetchRequest:model] error:&error];
+    NSManagedObject *managedObject = [[[CoreDataManager shareInstance].managedObjectContext executeFetchRequest:[[CoreDataOperations shareInstance] fetchRequest:model] error:&error] firstObject];
     
-    NSMutableArray * resultsArray = [NSMutableArray array];
-    
-    for (NSManagedObject *object in datas) {
-        MTLModel *resultObject = [MTLManagedObjectAdapter modelOfClass:[model class] fromManagedObject:object error:nil];
-        [resultsArray addObject:resultObject];
-    }
-    
-    NSAssert(!error, @"error---->%@",error);
-    
-    return resultsArray;
-}
-
-#pragma mark - Private Methods
-
-- (NSManagedObject *)createEntityInContext:(NSManagedObjectContext *)context data:(MTLModel<MTLManagedObjectSerializing> *)data
-{
-    NSError *error = nil;
-    
-    NSManagedObject *object = [MTLManagedObjectAdapter managedObjectFromModel:data insertingIntoContext:context error:&error];
+    MTLModel<MTLManagedObjectSerializing> *object = [MTLManagedObjectAdapter modelOfClass:[model class] fromManagedObject:managedObject error:&error];
     
     NSAssert(error == nil, @"error-->%@",error);
     
     return object;
 }
 
-- (NSFetchRequest *)fetchRequest:(MTLModel<MTLManagedObjectSerializing> *)model
-{
-    NSFetchRequest *fetchRequest = [NSFetchRequest fetchRequestWithEntityName:[[model class] managedObjectEntityName]];
+#pragma mark - Private Methods
+
+- (NSManagedObject *)createEntityInContext:(NSManagedObjectContext *)context data:(MTLModel<MTLManagedObjectSerializing> *)data {
+    NSError *error = nil;
     
-    return fetchRequest;
+    NSManagedObject *object = [MTLManagedObjectAdapter managedObjectFromModel:data insertingIntoContext:context error:&error];
+    
+    return object;
+}
+
+- (NSFetchRequest *)fetchRequest:(MTLModel<MTLManagedObjectSerializing> *)model {
+    return [NSFetchRequest fetchRequestWithEntityName:[[model class] managedObjectEntityName]];
 }
 
 @end

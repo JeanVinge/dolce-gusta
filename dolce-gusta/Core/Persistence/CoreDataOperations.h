@@ -14,23 +14,11 @@
 
 @interface CoreDataOperations : NSObject
 
-/*
- * Save operations
- */
 + (void)saveModels:(NSArray *)models;
-
 + (void)saveModel:(MTLModel<MTLManagedObjectSerializing> *)model;
-
-/*
- * Delete operations
- */
 + (void)deleteAllByModel:(MTLModel<MTLManagedObjectSerializing> *)model;
++ (void)deleteModels:(NSArray *)models;
 
-+ (void)deleteModels:(NSArray *)models; //every object is MTLModel<MTLManagedObjectSerializing>
-
-/*
- * Query operations
- */
-+ (NSArray *)queryModelsByModel:(MTLModel<MTLManagedObjectSerializing> *)model;
++ (__kindof MTLModel<MTLManagedObjectSerializing> *)queryFirstByModel:(MTLModel<MTLManagedObjectSerializing> *)model;
 
 @end

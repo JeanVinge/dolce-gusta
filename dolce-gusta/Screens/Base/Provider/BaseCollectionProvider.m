@@ -8,6 +8,8 @@
 
 #import "BaseCollectionProvider.h"
 #import "UICollectionView+Category.h"
+#import "CoreDataOperations.h"
+#import "BKBaseCollectionViewCell+Category.h"
 
 @interface BaseCollectionProvider()
 
@@ -38,6 +40,11 @@
 
 - (void)refresh:(NSArray *)list {
     self.list = list.mutableCopy;
+    [self.collectionView reloadData];
+}
+
+- (void)addAtIndex:(int)index withObject:(id)object {
+    [self.list insertObject:object atIndex:index];
     [self.collectionView reloadData];
 }
 
@@ -74,7 +81,7 @@
 #pragma mark - UICollectionViewDelegateFlowLayout
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
-    return CGSizeMake(collectionView.frame.size.width, 40);
+    return [collectionView sizeWithNibClass:[self.cellClass self] forIndexPath:indexPath withObject:self.list[indexPath.row]];
 }
 
 @end

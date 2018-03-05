@@ -7,17 +7,28 @@
 //
 
 #import "NetworkManager+Coffee.h"
+#import "CoreDataOperations.h"
 
 #define kPathList (@"list")
 
 @implementation NetworkManager (Coffee)
 
-+ (void)fetchListWithSuccess:(CoffeeListCompletion)success failure:(FailureCompletion)failure {
++ (void)fetchListForceReload:(BOOL)forceReload success:(CoffeeListCompletion)success failure:(FailureCompletion)failure {
+    
+    NSLog(@"%@", [CoreDataOperations queryFirstByModel:[CoffeeList self]]);
+    
+    CoffeeList * list = (CoffeeList *) [CoreDataOperations queryFirstByModel:[CoffeeList self]];
+    
+    if (list.coffees.count == 0 || forceReload == true) {
+        
+        [CoreDataOperations deleteAllByModel:[CoffeeList self]];
+        
         [self requestHTTPType:kGetHTTPRequestType URLPath:kPathList parameters:nil success:^(id task, id responseObject) {
-            [NetworkManager handleResponse:task response:responseObject completionHandler:^(id object) {
+            [NetworkManager handleResponse:task response:responseObject completion:^(id object) {
                 
                 NSError *error;
                 CoffeeList *list = [CoffeeList parse:responseObject error:&error];
+                [CoreDataOperations saveModel:list];
                 
                 if (error == nil) {
                     success(list);
@@ -29,6 +40,9 @@
         } failure:^(id operation, NSError *error) {
             failure(operation, error);
         }];
+    } else {
+        success(list);
     }
+}
 
 @end

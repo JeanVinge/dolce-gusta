@@ -11,11 +11,6 @@
 
 @implementation CoffeeCell
 
-- (void)awakeFromNib {
-    [super awakeFromNib];
-    // Initialization code
-}
-
 - (void)setup:(id)object {
     
     Coffee *coffee = (Coffee *) object;

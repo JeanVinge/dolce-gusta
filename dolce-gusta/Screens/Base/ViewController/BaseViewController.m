@@ -17,11 +17,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.title = @"";
+    self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@" " style:UIBarButtonItemStylePlain target:nil action:nil];
+    
     [self initComponents];
-    [self refreshAPI];
+    [self refreshAPIForceReload:NO];
 }
 
-- (void)refreshAPI {
+- (void)refreshAPIForceReload:(BOOL)forceReload {
 }
 
 - (void)initComponents {

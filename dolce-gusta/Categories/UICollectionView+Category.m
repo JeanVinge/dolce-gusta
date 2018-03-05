@@ -7,6 +7,7 @@
 //
 
 #import "UICollectionView+Category.h"
+#import "BKBaseCollectionViewCell+Category.h"
 
 @implementation UICollectionView (Category)
 
@@ -22,6 +23,19 @@
     [cell setup:object];
     
     return cell;
+}
+
+- (__kindof BKBaseCollectionViewCell *)dequeueReusableCellWithNibClass:(BKBaseCollectionViewCell *)cellClass forIndexPath:(NSIndexPath *)indexPath withObject:(id)object {
+    
+    NSArray *bundle = (NSArray *) [[NSBundle mainBundle] loadNibNamed:[[cellClass class] cellIdentifier] owner:[cellClass self] options:nil];
+    return (BKBaseCollectionViewCell *) bundle.firstObject;
+}
+
+- (CGSize)sizeWithNibClass:(BKBaseCollectionViewCell *)cellClass forIndexPath:(NSIndexPath *)indexPath withObject:(id)object {
+    
+    BKBaseCollectionViewCell *cell = [self dequeueReusableCellWithNibClass:cellClass forIndexPath:indexPath withObject:object];
+    
+    return [cell sizeWithObject:object];
 }
 
 @end

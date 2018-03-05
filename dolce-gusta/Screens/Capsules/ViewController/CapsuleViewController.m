@@ -11,6 +11,7 @@
 #import "BaseCollectionView.h"
 #import "CapsuleCell.h"
 #import "NewCapsuleViewController.h"
+#import "DetailViewController.h"
 
 @interface CapsuleViewController ()
 
@@ -22,10 +23,13 @@
 @implementation CapsuleViewController
 
 - (void)initComponents {
+    
+    self.title = @"Capsule List";
+    
     self.provider = [[CapsuleCollectionProvider alloc] initWithModelController:self collectionView:self.collectionView withClass:[CapsuleCell self]];
 }
 
-- (void)refreshAPI {
+- (void)refreshAPIForceReload:(BOOL)forceReload {
     [self.provider refresh:self.capsules];
 }
 
@@ -37,7 +41,16 @@
     
     controller.completion = ^(Capsule *capsule) {
         [self.provider add:capsule];
+        self.completion(self.provider.list, self.index);
     };
+    
+    [self showViewController:controller sender:nil];
+}
+
+- (IBAction)onTapButton:(id)sender {
+    
+    DetailViewController *controller = [DetailViewController fromStoryboard];
+    controller.capsules = self.provider.list;
     
     [self showViewController:controller sender:nil];
 }

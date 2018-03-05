@@ -8,20 +8,26 @@
 
 #import "NewCoffeeViewController.h"
 
-@interface NewCoffeeViewController ()
-
-@property (weak, nonatomic) IBOutlet UITextField *textField;
-
-@end
-
 @implementation NewCoffeeViewController
 
-- (IBAction)onTapSend:(UIBarButtonItem *)sender {
+- (void)initComponents {
     
-    Coffee *coffe = [[Coffee alloc] initWithName:self.textField.text];
-    self.completion(coffe);
+    self.title = @"New Coffee";
     
-    [self.navigationController popViewControllerAnimated:YES];
+    [self.textFieldView configureWithTitle:@"Name" placeholderText:@"espresso for eg."];
+
+    [self.textFieldView.textField addTarget:self action:@selector(onTapSend:) forControlEvents:UIControlEventEditingDidEnd];
+}
+
+- (IBAction)onTapSend:( UIButton*)sender {
+    
+    if (self.textFieldView.textField.text.length > 0) {
+     
+        Coffee *coffe = [[Coffee alloc] initWithName:self.textFieldView.textField.text];
+        self.completion(coffe);
+        
+        [self.navigationController popViewControllerAnimated:YES];
+    }
 }
 
 @end

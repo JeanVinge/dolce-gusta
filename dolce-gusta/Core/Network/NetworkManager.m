@@ -36,13 +36,13 @@ NSString * const kBaseURLString = @"http://private-5a78d1-dolcegusta.apiary-mock
     }
 }
 
-+ (void)handleResponse:(NSURLSessionDataTask *)task response:(id)responseObject completionHandler:(GenericCompletion)completion {
++ (void)handleResponse:(NSURLSessionDataTask *)task response:(id)response completion:(GenericCompletion)completion {
     if (completion) {
-        if ([responseObject isKindOfClass:[NSDictionary class]]) {
-            NSDictionary *responseDict = (NSDictionary *)responseObject;
+        if ([response isKindOfClass:[NSDictionary class]]) {
+            NSDictionary *responseDict = (NSDictionary *)response;
             completion(responseDict);
-        } else if ([responseObject isKindOfClass:[NSArray class]]) {
-            NSArray *responseDict = (NSArray *)responseObject;
+        } else if ([response isKindOfClass:[NSArray class]]) {
+            NSArray *responseDict = (NSArray *)response;
             completion(responseDict);
         }
     }

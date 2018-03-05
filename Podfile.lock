@@ -62,6 +62,12 @@ PODS:
   - MTLManagedObjectAdapter/extobjc (1.0.3):
     - Mantle (~> 2.0)
   - ObjectiveSugar (1.1.0)
+  - SDWebImage (4.3.2):
+    - SDWebImage/Core (= 4.3.2)
+  - SDWebImage/Core (4.3.2)
+  - SFRoundProgressCounterView (0.0.6):
+    - TTTAttributedLabel (~> 1.7.1)
+  - TTTAttributedLabel (1.7.5)
 
 DEPENDENCIES:
   - AFNetworking
@@ -71,6 +77,8 @@ DEPENDENCIES:
   - libextobjc
   - MTLManagedObjectAdapter
   - ObjectiveSugar
+  - SDWebImage (~> 4.0)
+  - SFRoundProgressCounterView
 
 SPEC CHECKSUMS:
   AFNetworking: 8ac6017b94ea105479f7776e5288e48ae9c59bb4
@@ -81,7 +89,10 @@ SPEC CHECKSUMS:
   Mantle: bc40bb061d8c2c6fb48d5083e04d928c3b7f73d9
   MTLManagedObjectAdapter: 631a53432675dcf03a9d90624afb3cececf54631
   ObjectiveSugar: a6a25f23d657c19df0a0b972466d5b5ca9f5295c
+  SDWebImage: 29bd3c0bc1f01e5eb59720847c64ad4c4ca1af5d
+  SFRoundProgressCounterView: 47517b12c7ad2dd38b2b910a1d5db48c6efb23c5
+  TTTAttributedLabel: 19f03d496810ab0706c392a297c6d49fe173bac4
 
-PODFILE CHECKSUM: 643c0795ebe6515c8bb60eddc85d6036ac409d96
+PODFILE CHECKSUM: 45459ebf41eb3243dae41efceb1709b5f5a8056e
 
 COCOAPODS: 1.4.0

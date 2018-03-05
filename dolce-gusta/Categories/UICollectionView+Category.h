@@ -15,4 +15,8 @@
 
 - (__kindof BKBaseCollectionViewCell *)dequeueReusableCellWithClass:(BKBaseCollectionViewCell *)cellClass forIndexPath:(NSIndexPath *)indexPath withObject:(id)object;
 
+- (__kindof BKBaseCollectionViewCell *)dequeueReusableCellWithNibClass:(BKBaseCollectionViewCell *)cellClass forIndexPath:(NSIndexPath *)indexPath withObject:(id)object;
+
+- (CGSize)sizeWithNibClass:(BKBaseCollectionViewCell *)cellClass forIndexPath:(NSIndexPath *)indexPath withObject:(id)object;
+
 @end

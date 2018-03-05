@@ -14,15 +14,13 @@
 @synthesize managedObjectModel = _managedObjectModel;
 @synthesize persistentStoreCoordinator = _persistentStoreCoordinator;
 
-
-
-#pragma mark -
 #pragma mark - Public Methods
 
-+(instancetype)shareInstance
-{
++(instancetype)shareInstance {
+    
     static CoreDataManager *instance = nil;
     static dispatch_once_t oneToken;
+    
     dispatch_once(&oneToken, ^{
         instance = [[self alloc] init];
     });
@@ -30,10 +28,11 @@
     return instance;
 }
 
-- (void)saveContext
-{
+- (void)saveContext {
+    
     NSError *error = nil;
     NSManagedObjectContext *managedObjectContext = self.managedObjectContext;
+    
     if (managedObjectContext) {
         if ([managedObjectContext hasChanges] && ![managedObjectContext save:&error]) {
             NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
@@ -41,19 +40,20 @@
     }
 }
 
-- (NSURL *)applicationDocumentsDirectory
-{
+- (NSURL *)applicationDocumentsDirectory {
     return [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
 }
 
-#pragma mark -
 #pragma mark - Override Methods
 
-- (NSManagedObjectContext *)managedObjectContext
-{
+- (NSManagedObjectContext *)managedObjectContext {
+    
     if (!_managedObjectContext) {
+        
         NSPersistentStoreCoordinator *coordinator = [self persistentStoreCoordinator];
+        
         if (coordinator != nil) {
+            
             _managedObjectContext = [[NSManagedObjectContext alloc] initWithConcurrencyType:NSPrivateQueueConcurrencyType];
             _managedObjectContext.mergePolicy = NSMergeByPropertyObjectTrumpMergePolicy;
             [_managedObjectContext setPersistentStoreCoordinator:coordinator];
@@ -62,18 +62,19 @@
     return _managedObjectContext;
 }
 
-- (NSManagedObjectModel *)managedObjectModel
-{
+- (NSManagedObjectModel *)managedObjectModel {
+    
     if (!_managedObjectModel) {
         
         NSURL *modelURL = [[NSBundle mainBundle] URLForResource:@"Model" withExtension:@"momd"];
         _managedObjectModel = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL];
     }
+    
     return _managedObjectModel;
 }
 
-- (NSPersistentStoreCoordinator *)persistentStoreCoordinator
-{
+- (NSPersistentStoreCoordinator *)persistentStoreCoordinator {
+    
     if (!_persistentStoreCoordinator) {
         
         NSURL *storeURL = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:@"db.sqlite"];
@@ -84,12 +85,9 @@
         _persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self managedObjectModel]];
         if (![_persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeURL options:myOptions error:&error]) {
             NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
-            //            abort();
         }
     }
     return _persistentStoreCoordinator;
 }
-
-
 
 @end

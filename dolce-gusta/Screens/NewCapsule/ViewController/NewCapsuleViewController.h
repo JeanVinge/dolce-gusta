@@ -7,8 +7,16 @@
 //
 
 #import "ViewController.h"
+#import "TextFieldView.h"
+#import "SubtitleLabel.h"
 
 @interface NewCapsuleViewController : ViewController
+
+@property (weak, nonatomic) IBOutlet TextFieldView *nameTextFieldView;
+@property (weak, nonatomic) IBOutlet TextFieldView *instructionsTextFieldView;
+@property (weak, nonatomic) IBOutlet TextFieldView *imageURLTextFieldView;
+@property (weak, nonatomic) IBOutlet SubtitleLabel *secondsLabel;
+@property (weak, nonatomic) IBOutlet UIStepper *stepper;
 
 @property (nonatomic, copy) CapsuleCompletion completion;
 

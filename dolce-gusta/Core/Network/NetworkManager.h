@@ -18,6 +18,6 @@ typedef NS_ENUM(NSInteger, HTTPRequestType) {
 
 + (void)requestHTTPType:(HTTPRequestType)httpType URLPath:(NSString *)path parameters:(NSDictionary *)parameters success:(GenericTwoCompletion)success failure:(FailureCompletion)failure;
 
-+ (void)handleResponse:(NSURLSessionDataTask *)task response:(id)responseObject completionHandler:(GenericCompletion)completion;
++ (void)handleResponse:(NSURLSessionDataTask *)task response:(id)response completion:(GenericCompletion)completion;
 
 @end

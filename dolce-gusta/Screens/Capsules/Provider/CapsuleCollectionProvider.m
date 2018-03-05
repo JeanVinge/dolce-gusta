@@ -16,14 +16,13 @@
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     
     DetailViewController *controller = [DetailViewController fromStoryboard];
+    controller.capsules = @[self.list[indexPath.row]];
     
     [self.controller showViewController:controller sender:nil];
 }
 
-#pragma mark - UICollectionViewDelegateFlowLayout
-
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
-    return CGSizeMake(collectionView.frame.size.width, 40);
+    return CGSizeMake(collectionView.frame.size.width, 100);
 }
 
 @end

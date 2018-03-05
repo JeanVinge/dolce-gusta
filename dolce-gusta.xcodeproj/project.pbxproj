@@ -26,6 +26,24 @@
 		3914D5952049E19C00B8FD2F /* BaseMantle.m in Sources */ = {isa = PBXBuildFile; fileRef = 3914D5942049E19C00B8FD2F /* BaseMantle.m */; };
 		3914D59F2049E7D600B8FD2F /* NewCoffeeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3914D59E2049E7D600B8FD2F /* NewCoffeeViewController.m */; };
 		3914D5A32049E7F200B8FD2F /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3914D5A22049E7F200B8FD2F /* BaseViewController.m */; };
+		393F6820204C37E500E1EEEF /* DetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 393F681E204C37E500E1EEEF /* DetailCell.m */; };
+		393F6821204C37E500E1EEEF /* DetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 393F681F204C37E500E1EEEF /* DetailCell.xib */; };
+		393F6836204C3CF900E1EEEF /* BaseCounterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 393F6835204C3CF900E1EEEF /* BaseCounterView.m */; };
+		393F6839204C3E7900E1EEEF /* DetailCollectionProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 393F6838204C3E7900E1EEEF /* DetailCollectionProvider.m */; };
+		393F683C204C415E00E1EEEF /* BKBaseCollectionViewCell+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 393F683B204C415E00E1EEEF /* BKBaseCollectionViewCell+Category.m */; };
+		393F683F204C4CC800E1EEEF /* BaseNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 393F683E204C4CC800E1EEEF /* BaseNavigationViewController.m */; };
+		393F6847204C52DE00E1EEEF /* BaseImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 393F6846204C52DE00E1EEEF /* BaseImageView.m */; };
+		393F684A204C57DB00E1EEEF /* TitleLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 393F6849204C57DB00E1EEEF /* TitleLabel.m */; };
+		393F684D204C583200E1EEEF /* BaseLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 393F684C204C583200E1EEEF /* BaseLabel.m */; };
+		393F6850204C587E00E1EEEF /* SubtitleLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 393F684F204C587E00E1EEEF /* SubtitleLabel.m */; };
+		393F6853204C67F000E1EEEF /* ChronometerButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 393F6852204C67F000E1EEEF /* ChronometerButton.m */; };
+		393F6856204C71A800E1EEEF /* ChronometerLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 393F6855204C71A800E1EEEF /* ChronometerLabel.m */; };
+		393F6859204C7C5200E1EEEF /* CapsuleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 393F6858204C7C5200E1EEEF /* CapsuleButton.m */; };
+		393F685C204C7C6C00E1EEEF /* BlueButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 393F685B204C7C6C00E1EEEF /* BlueButton.m */; };
+		3978EB87204C93CF000D49D8 /* TextFieldView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3978EB86204C93CF000D49D8 /* TextFieldView.m */; };
+		3978EB89204C93DC000D49D8 /* TextFieldView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3978EB88204C93DC000D49D8 /* TextFieldView.xib */; };
+		3978EB8C204C942B000D49D8 /* FormLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3978EB8B204C942B000D49D8 /* FormLabel.m */; };
+		3978EB8F204C97E4000D49D8 /* UIView+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 3978EB8E204C97E4000D49D8 /* UIView+Category.m */; };
 		39891DF72049ECB300A9649E /* CapsuleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39891DF62049ECB300A9649E /* CapsuleViewController.m */; };
 		39891DFC2049ECCC00A9649E /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39891DFB2049ECCC00A9649E /* DetailViewController.m */; };
 		39891E012049EE1A00A9649E /* MainCollectionProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 39891E002049EE1A00A9649E /* MainCollectionProvider.m */; };
@@ -102,6 +120,41 @@
 		3914D59E2049E7D600B8FD2F /* NewCoffeeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewCoffeeViewController.m; sourceTree = "<group>"; };
 		3914D5A12049E7F200B8FD2F /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		3914D5A22049E7F200B8FD2F /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		393F681D204C37E500E1EEEF /* DetailCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailCell.h; sourceTree = "<group>"; };
+		393F681E204C37E500E1EEEF /* DetailCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailCell.m; sourceTree = "<group>"; };
+		393F681F204C37E500E1EEEF /* DetailCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailCell.xib; sourceTree = "<group>"; };
+		393F6834204C3CF900E1EEEF /* BaseCounterView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseCounterView.h; sourceTree = "<group>"; };
+		393F6835204C3CF900E1EEEF /* BaseCounterView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseCounterView.m; sourceTree = "<group>"; };
+		393F6837204C3E7900E1EEEF /* DetailCollectionProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailCollectionProvider.h; sourceTree = "<group>"; };
+		393F6838204C3E7900E1EEEF /* DetailCollectionProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailCollectionProvider.m; sourceTree = "<group>"; };
+		393F683A204C415E00E1EEEF /* BKBaseCollectionViewCell+Category.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BKBaseCollectionViewCell+Category.h"; sourceTree = "<group>"; };
+		393F683B204C415E00E1EEEF /* BKBaseCollectionViewCell+Category.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "BKBaseCollectionViewCell+Category.m"; sourceTree = "<group>"; };
+		393F683D204C4CC800E1EEEF /* BaseNavigationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseNavigationViewController.h; sourceTree = "<group>"; };
+		393F683E204C4CC800E1EEEF /* BaseNavigationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationViewController.m; sourceTree = "<group>"; };
+		393F6845204C52DE00E1EEEF /* BaseImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseImageView.h; sourceTree = "<group>"; };
+		393F6846204C52DE00E1EEEF /* BaseImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseImageView.m; sourceTree = "<group>"; };
+		393F6848204C57DB00E1EEEF /* TitleLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TitleLabel.h; path = ../../Base/Views/TitleLabel.h; sourceTree = "<group>"; };
+		393F6849204C57DB00E1EEEF /* TitleLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TitleLabel.m; sourceTree = "<group>"; };
+		393F684B204C583200E1EEEF /* BaseLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseLabel.h; sourceTree = "<group>"; };
+		393F684C204C583200E1EEEF /* BaseLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseLabel.m; sourceTree = "<group>"; };
+		393F684E204C587E00E1EEEF /* SubtitleLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SubtitleLabel.h; sourceTree = "<group>"; };
+		393F684F204C587E00E1EEEF /* SubtitleLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SubtitleLabel.m; sourceTree = "<group>"; };
+		393F6851204C67F000E1EEEF /* ChronometerButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChronometerButton.h; sourceTree = "<group>"; };
+		393F6852204C67F000E1EEEF /* ChronometerButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChronometerButton.m; sourceTree = "<group>"; };
+		393F6854204C71A800E1EEEF /* ChronometerLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChronometerLabel.h; sourceTree = "<group>"; };
+		393F6855204C71A800E1EEEF /* ChronometerLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChronometerLabel.m; sourceTree = "<group>"; };
+		393F6857204C7C5200E1EEEF /* CapsuleButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CapsuleButton.h; sourceTree = "<group>"; };
+		393F6858204C7C5200E1EEEF /* CapsuleButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CapsuleButton.m; sourceTree = "<group>"; };
+		393F685A204C7C6C00E1EEEF /* BlueButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlueButton.h; sourceTree = "<group>"; };
+		393F685B204C7C6C00E1EEEF /* BlueButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlueButton.m; sourceTree = "<group>"; };
+		3978EB80204C938F000D49D8 /* NewCoffeeFormView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewCoffeeFormView.h; sourceTree = "<group>"; };
+		3978EB85204C93CF000D49D8 /* TextFieldView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextFieldView.h; sourceTree = "<group>"; };
+		3978EB86204C93CF000D49D8 /* TextFieldView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextFieldView.m; sourceTree = "<group>"; };
+		3978EB88204C93DC000D49D8 /* TextFieldView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextFieldView.xib; sourceTree = "<group>"; };
+		3978EB8A204C942B000D49D8 /* FormLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FormLabel.h; sourceTree = "<group>"; };
+		3978EB8B204C942B000D49D8 /* FormLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FormLabel.m; sourceTree = "<group>"; };
+		3978EB8D204C97E4000D49D8 /* UIView+Category.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Category.h"; sourceTree = "<group>"; };
+		3978EB8E204C97E4000D49D8 /* UIView+Category.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Category.m"; sourceTree = "<group>"; };
 		39891DF52049ECB300A9649E /* CapsuleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CapsuleViewController.h; sourceTree = "<group>"; };
 		39891DF62049ECB300A9649E /* CapsuleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CapsuleViewController.m; sourceTree = "<group>"; };
 		39891DFA2049ECCC00A9649E /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
@@ -373,6 +426,7 @@
 		3914D59B2049E7C000B8FD2F /* NewCoffee */ = {
 			isa = PBXGroup;
 			children = (
+				3978EB7F204C937E000D49D8 /* View */,
 				3914D59C2049E7C700B8FD2F /* ViewController */,
 			);
 			path = NewCoffee;
@@ -402,8 +456,54 @@
 			children = (
 				3914D5A12049E7F200B8FD2F /* BaseViewController.h */,
 				3914D5A22049E7F200B8FD2F /* BaseViewController.m */,
+				393F683D204C4CC800E1EEEF /* BaseNavigationViewController.h */,
+				393F683E204C4CC800E1EEEF /* BaseNavigationViewController.m */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		393F681B204C352F00E1EEEF /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				393F6837204C3E7900E1EEEF /* DetailCollectionProvider.h */,
+				393F6838204C3E7900E1EEEF /* DetailCollectionProvider.m */,
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
+		393F681C204C375E00E1EEEF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				393F6848204C57DB00E1EEEF /* TitleLabel.h */,
+				393F6849204C57DB00E1EEEF /* TitleLabel.m */,
+				393F681D204C37E500E1EEEF /* DetailCell.h */,
+				393F681E204C37E500E1EEEF /* DetailCell.m */,
+				393F681F204C37E500E1EEEF /* DetailCell.xib */,
+				393F6834204C3CF900E1EEEF /* BaseCounterView.h */,
+				393F6835204C3CF900E1EEEF /* BaseCounterView.m */,
+				393F684E204C587E00E1EEEF /* SubtitleLabel.h */,
+				393F684F204C587E00E1EEEF /* SubtitleLabel.m */,
+				393F6851204C67F000E1EEEF /* ChronometerButton.h */,
+				393F6852204C67F000E1EEEF /* ChronometerButton.m */,
+				393F6854204C71A800E1EEEF /* ChronometerLabel.h */,
+				393F6855204C71A800E1EEEF /* ChronometerLabel.m */,
+				393F685A204C7C6C00E1EEEF /* BlueButton.h */,
+				393F685B204C7C6C00E1EEEF /* BlueButton.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3978EB7F204C937E000D49D8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3978EB80204C938F000D49D8 /* NewCoffeeFormView.h */,
+				3978EB85204C93CF000D49D8 /* TextFieldView.h */,
+				3978EB86204C93CF000D49D8 /* TextFieldView.m */,
+				3978EB88204C93DC000D49D8 /* TextFieldView.xib */,
+				3978EB8A204C942B000D49D8 /* FormLabel.h */,
+				3978EB8B204C942B000D49D8 /* FormLabel.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		39891DF32049EC9300A9649E /* Capsules */ = {
@@ -428,6 +528,8 @@
 		39891DF82049ECBB00A9649E /* Detail */ = {
 			isa = PBXGroup;
 			children = (
+				393F681C204C375E00E1EEEF /* View */,
+				393F681B204C352F00E1EEEF /* Provider */,
 				39891DF92049ECC000A9649E /* ViewController */,
 			);
 			path = Detail;
@@ -464,8 +566,12 @@
 		39891E082049F45400A9649E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				393F684B204C583200E1EEEF /* BaseLabel.h */,
+				393F684C204C583200E1EEEF /* BaseLabel.m */,
 				39891E0A2049F54000A9649E /* BaseCollectionView.h */,
 				39891E0B2049F54000A9649E /* BaseCollectionView.m */,
+				393F6845204C52DE00E1EEEF /* BaseImageView.h */,
+				393F6846204C52DE00E1EEEF /* BaseImageView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -477,6 +583,10 @@
 				39891E0F2049F6BA00A9649E /* UICollectionView+Category.m */,
 				39891E1B2049FEDD00A9649E /* UIViewController+Category.h */,
 				39891E1C2049FEDD00A9649E /* UIViewController+Category.m */,
+				393F683A204C415E00E1EEEF /* BKBaseCollectionViewCell+Category.h */,
+				393F683B204C415E00E1EEEF /* BKBaseCollectionViewCell+Category.m */,
+				3978EB8D204C97E4000D49D8 /* UIView+Category.h */,
+				3978EB8E204C97E4000D49D8 /* UIView+Category.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -487,6 +597,8 @@
 				39891E122049FD7F00A9649E /* CapsuleCell.h */,
 				39891E132049FD7F00A9649E /* CapsuleCell.m */,
 				39891E142049FD7F00A9649E /* CapsuleCell.xib */,
+				393F6857204C7C5200E1EEEF /* CapsuleButton.h */,
+				393F6858204C7C5200E1EEEF /* CapsuleButton.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -661,8 +773,10 @@
 			files = (
 				3914D50020497F1000B8FD2F /* LaunchScreen.storyboard in Resources */,
 				3914D4FD20497F1000B8FD2F /* Assets.xcassets in Resources */,
+				393F6821204C37E500E1EEEF /* DetailCell.xib in Resources */,
 				3914D4FB20497F1000B8FD2F /* Main.storyboard in Resources */,
 				39891E072049F10900A9649E /* CoffeeCell.xib in Resources */,
+				3978EB89204C93DC000D49D8 /* TextFieldView.xib in Resources */,
 				39891E162049FD7F00A9649E /* CapsuleCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -841,30 +955,46 @@
 			buildActionMask = 2147483647;
 			files = (
 				3914D57D2049BB0B00B8FD2F /* NetworkManager.m in Sources */,
+				393F6853204C67F000E1EEEF /* ChronometerButton.m in Sources */,
+				393F683F204C4CC800E1EEEF /* BaseNavigationViewController.m in Sources */,
 				39891E152049FD7F00A9649E /* CapsuleCell.m in Sources */,
+				393F6859204C7C5200E1EEEF /* CapsuleButton.m in Sources */,
+				393F6847204C52DE00E1EEEF /* BaseImageView.m in Sources */,
 				3914D4F820497F1000B8FD2F /* ViewController.m in Sources */,
+				393F685C204C7C6C00E1EEEF /* BlueButton.m in Sources */,
 				39891E26204A19F800A9649E /* NewCapsuleViewController.m in Sources */,
 				3914D50320497F1000B8FD2F /* main.m in Sources */,
 				39891E012049EE1A00A9649E /* MainCollectionProvider.m in Sources */,
 				39891E21204A0B0F00A9649E /* BaseCollectionProvider.m in Sources */,
 				39891DFC2049ECCC00A9649E /* DetailViewController.m in Sources */,
+				393F6820204C37E500E1EEEF /* DetailCell.m in Sources */,
 				3914D5372049B32700B8FD2F /* CoreDataOperations.m in Sources */,
 				3914D4F520497F1000B8FD2F /* AppDelegate.m in Sources */,
+				393F683C204C415E00E1EEEF /* BKBaseCollectionViewCell+Category.m in Sources */,
 				3914D5A32049E7F200B8FD2F /* BaseViewController.m in Sources */,
 				3914D58C2049CB6900B8FD2F /* Coffee.m in Sources */,
 				3914D59F2049E7D600B8FD2F /* NewCoffeeViewController.m in Sources */,
 				3914D58B2049CB6900B8FD2F /* Capsule.m in Sources */,
 				39891E1A2049FDA900A9649E /* CapsuleCollectionProvider.m in Sources */,
+				393F684D204C583200E1EEEF /* BaseLabel.m in Sources */,
+				393F6836204C3CF900E1EEEF /* BaseCounterView.m in Sources */,
 				3914D5362049B32700B8FD2F /* CoreDataManager.m in Sources */,
 				39891E102049F6BA00A9649E /* UICollectionView+Category.m in Sources */,
 				39891E0C2049F54000A9649E /* BaseCollectionView.m in Sources */,
 				3914D52E2049A48000B8FD2F /* Model.xcdatamodeld in Sources */,
 				3914D58F2049D86200B8FD2F /* CoffeeList.m in Sources */,
+				3978EB8F204C97E4000D49D8 /* UIView+Category.m in Sources */,
+				3978EB87204C93CF000D49D8 /* TextFieldView.m in Sources */,
 				3914D5922049DA9D00B8FD2F /* NetworkManager+Coffee.m in Sources */,
+				393F684A204C57DB00E1EEEF /* TitleLabel.m in Sources */,
+				393F6839204C3E7900E1EEEF /* DetailCollectionProvider.m in Sources */,
 				39891DF72049ECB300A9649E /* CapsuleViewController.m in Sources */,
 				39891E1D2049FEDD00A9649E /* UIViewController+Category.m in Sources */,
 				3914D5952049E19C00B8FD2F /* BaseMantle.m in Sources */,
 				39891E062049F10900A9649E /* CoffeeCell.m in Sources */,
+				393F6850204C587E00E1EEEF /* SubtitleLabel.m in Sources */,
+				3978EB8C204C942B000D49D8 /* FormLabel.m in Sources */,
+				393F6856204C71A800E1EEEF /* ChronometerLabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -967,7 +1097,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -1016,7 +1146,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -1029,7 +1159,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = SFLM2JCB4V;
+				DEVELOPMENT_TEAM = T66Z85Q5ZT;
 				INFOPLIST_FILE = "$(SRCROOT)/dolce-gusta/AppDelegate/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "br.dolce-gusta";
@@ -1044,7 +1174,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = SFLM2JCB4V;
+				DEVELOPMENT_TEAM = T66Z85Q5ZT;
 				INFOPLIST_FILE = "$(SRCROOT)/dolce-gusta/AppDelegate/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "br.dolce-gusta";
