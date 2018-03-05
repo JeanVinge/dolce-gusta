@@ -35,9 +35,10 @@
     [super prepareForReuse];
 
     [self.layer removeAllAnimations];
-    [self.titleLabel reset];
+//    [self.titleLabel reset];
     [self.instructionLabel reset];
     [self.boxImageView reset];
+    [self.button setSelected:NO];
 }
 
 - (void)setup:(id)object {
@@ -61,6 +62,7 @@
 #pragma mark - SFRoundProgressCounterViewDelegate
 
 - (void)countdownDidEnd:(SFRoundProgressCounterView *)progressCounterView {
+    self.completionCounter(self);
 }
 
 #pragma mark - Action Methods

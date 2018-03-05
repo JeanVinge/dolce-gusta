@@ -16,6 +16,8 @@
 
 @interface DetailCell : BKBaseCollectionViewCell
 
+typedef void (^DetailCellCompletion)(DetailCell *);
+
 @property (weak, nonatomic) IBOutlet UIView *containerView;
 @property (weak, nonatomic) IBOutlet TitleLabel *titleLabel;
 @property (weak, nonatomic) IBOutlet BaseImageView *boxImageView;
@@ -23,5 +25,7 @@
 @property (weak, nonatomic) IBOutlet BaseCounterView *counterView;
 @property (weak, nonatomic) IBOutlet ChronometerLabel *chronometerLabel;
 @property (weak, nonatomic) IBOutlet ChronometerButton *button;
+
+@property (nonatomic, copy) DetailCellCompletion completionCounter;
 
 @end

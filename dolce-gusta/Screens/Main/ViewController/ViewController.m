@@ -38,7 +38,7 @@
         if ([list.coffees isKindOfClass:[NSSet class]]) {
             list.coffees = [((NSSet *) list.coffees) allObjects];
         }
-        
+    
         [self.provider refresh:list.coffees];
     } failure:^(id task, NSError *error) {
         

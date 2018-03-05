@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GlobalTypeDef.h"
 
 @interface BaseCollectionView : UICollectionView
 

@@ -84,6 +84,13 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S5G-0e-gfg" userLabel="Separator">
+                        <rect key="frame" x="30" y="629.5" width="300" height="0.5"/>
+                        <color key="backgroundColor" name="controlShadowColor" catalog="System" colorSpace="catalog"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="dDD-uW-hd5"/>
+                        </constraints>
+                    </view>
                 </subviews>
             </view>
             <constraints>
@@ -94,12 +101,15 @@
                 <constraint firstItem="Pb6-2q-f7i" firstAttribute="trailing" secondItem="nEh-Tu-H7q" secondAttribute="trailing" id="LK6-FL-2io"/>
                 <constraint firstAttribute="trailing" secondItem="dBN-rf-VpV" secondAttribute="trailing" constant="30" id="Li9-Kw-u2G"/>
                 <constraint firstItem="vMF-3Y-sJy" firstAttribute="trailing" secondItem="dBN-rf-VpV" secondAttribute="trailing" id="PmD-p4-FJD"/>
+                <constraint firstItem="S5G-0e-gfg" firstAttribute="leading" secondItem="FED-kQ-IN0" secondAttribute="leading" id="ROo-0S-hQI"/>
                 <constraint firstItem="Pb6-2q-f7i" firstAttribute="top" secondItem="nEh-Tu-H7q" secondAttribute="bottom" constant="40" id="S6a-Ke-wY1"/>
                 <constraint firstItem="vMF-3Y-sJy" firstAttribute="top" secondItem="dBN-rf-VpV" secondAttribute="bottom" constant="20" id="Sdo-Ce-k99"/>
                 <constraint firstItem="nEh-Tu-H7q" firstAttribute="top" secondItem="27m-ph-Psg" secondAttribute="bottom" constant="30" id="SkS-mk-KaS"/>
                 <constraint firstItem="nEh-Tu-H7q" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="30" id="TwD-gI-Oa4"/>
                 <constraint firstItem="dBN-rf-VpV" firstAttribute="top" secondItem="FED-kQ-IN0" secondAttribute="bottom" constant="30" id="UR2-P3-1Od"/>
                 <constraint firstItem="27m-ph-Psg" firstAttribute="trailing" secondItem="vMF-3Y-sJy" secondAttribute="trailing" id="Vbq-us-iSK"/>
+                <constraint firstAttribute="bottom" secondItem="S5G-0e-gfg" secondAttribute="bottom" id="YAS-IZ-AMQ"/>
+                <constraint firstItem="S5G-0e-gfg" firstAttribute="trailing" secondItem="FED-kQ-IN0" secondAttribute="trailing" id="dcL-s3-Vvw"/>
                 <constraint firstAttribute="bottom" secondItem="Pb6-2q-f7i" secondAttribute="bottom" constant="20" id="eTC-Aj-gTO"/>
                 <constraint firstItem="Pb6-2q-f7i" firstAttribute="leading" secondItem="nEh-Tu-H7q" secondAttribute="leading" id="lwX-HC-qLZ"/>
                 <constraint firstItem="27m-ph-Psg" firstAttribute="top" secondItem="vMF-3Y-sJy" secondAttribute="bottom" constant="30" id="oqU-KR-Ba4"/>

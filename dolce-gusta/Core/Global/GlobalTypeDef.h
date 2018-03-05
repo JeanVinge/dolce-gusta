@@ -17,3 +17,4 @@ typedef void (^CapsuleCompletion)(Capsule *);
 typedef void (^FailureCompletion)(id, NSError *);
 typedef void (^GenericCompletion)(id);
 typedef void (^GenericTwoCompletion)(id, id);
+typedef void (^EmptyCompletion)(void);

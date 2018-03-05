@@ -57,6 +57,7 @@
 		39891E1D2049FEDD00A9649E /* UIViewController+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 39891E1C2049FEDD00A9649E /* UIViewController+Category.m */; };
 		39891E21204A0B0F00A9649E /* BaseCollectionProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 39891E20204A0B0F00A9649E /* BaseCollectionProvider.m */; };
 		39891E26204A19F800A9649E /* NewCapsuleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39891E25204A19F800A9649E /* NewCapsuleViewController.m */; };
+		39A76D27204CE4BA00BD138E /* UIAlertController+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 39A76D26204CE4BA00BD138E /* UIAlertController+Category.m */; };
 		4C2FDD0577778D308CBF2E51 /* libPods-dolce-gusta.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 342087DFEA3333F4E588A1E3 /* libPods-dolce-gusta.a */; };
 		56C2B4948C760DD80D8FD335 /* libPods-dolce-gustaTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FF4D96FF1353306279F8F7F9 /* libPods-dolce-gustaTests.a */; };
 		F0E6F94125A01953B6D166F8 /* libPods-dolce-gustaUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 242CF8593D47145F7723959D /* libPods-dolce-gustaUITests.a */; };
@@ -133,7 +134,7 @@
 		393F683E204C4CC800E1EEEF /* BaseNavigationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationViewController.m; sourceTree = "<group>"; };
 		393F6845204C52DE00E1EEEF /* BaseImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseImageView.h; sourceTree = "<group>"; };
 		393F6846204C52DE00E1EEEF /* BaseImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseImageView.m; sourceTree = "<group>"; };
-		393F6848204C57DB00E1EEEF /* TitleLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TitleLabel.h; path = ../../Base/Views/TitleLabel.h; sourceTree = "<group>"; };
+		393F6848204C57DB00E1EEEF /* TitleLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TitleLabel.h; sourceTree = "<group>"; };
 		393F6849204C57DB00E1EEEF /* TitleLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TitleLabel.m; sourceTree = "<group>"; };
 		393F684B204C583200E1EEEF /* BaseLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseLabel.h; sourceTree = "<group>"; };
 		393F684C204C583200E1EEEF /* BaseLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseLabel.m; sourceTree = "<group>"; };
@@ -147,7 +148,6 @@
 		393F6858204C7C5200E1EEEF /* CapsuleButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CapsuleButton.m; sourceTree = "<group>"; };
 		393F685A204C7C6C00E1EEEF /* BlueButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlueButton.h; sourceTree = "<group>"; };
 		393F685B204C7C6C00E1EEEF /* BlueButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlueButton.m; sourceTree = "<group>"; };
-		3978EB80204C938F000D49D8 /* NewCoffeeFormView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewCoffeeFormView.h; sourceTree = "<group>"; };
 		3978EB85204C93CF000D49D8 /* TextFieldView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextFieldView.h; sourceTree = "<group>"; };
 		3978EB86204C93CF000D49D8 /* TextFieldView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextFieldView.m; sourceTree = "<group>"; };
 		3978EB88204C93DC000D49D8 /* TextFieldView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextFieldView.xib; sourceTree = "<group>"; };
@@ -180,6 +180,8 @@
 		39891E24204A19F800A9649E /* NewCapsuleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewCapsuleViewController.h; sourceTree = "<group>"; };
 		39891E25204A19F800A9649E /* NewCapsuleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewCapsuleViewController.m; sourceTree = "<group>"; };
 		39891E27204A24CE00A9649E /* GlobalTypeDef.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlobalTypeDef.h; sourceTree = "<group>"; };
+		39A76D25204CE4BA00BD138E /* UIAlertController+Category.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+Category.h"; sourceTree = "<group>"; };
+		39A76D26204CE4BA00BD138E /* UIAlertController+Category.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+Category.m"; sourceTree = "<group>"; };
 		9E8A5CEAD799F0E08755AA41 /* Pods-dolce-gustaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dolce-gustaUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-dolce-gustaUITests/Pods-dolce-gustaUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A59BF8E64166297777AB44E7 /* Pods-dolce-gustaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dolce-gustaUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-dolce-gustaUITests/Pods-dolce-gustaUITests.release.xcconfig"; sourceTree = "<group>"; };
 		ACF2344D5DC8706344454160 /* Pods-dolce-gusta.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dolce-gusta.debug.xcconfig"; path = "Pods/Target Support Files/Pods-dolce-gusta/Pods-dolce-gusta.debug.xcconfig"; sourceTree = "<group>"; };
@@ -345,6 +347,7 @@
 		3914D52B204986E900B8FD2F /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				39A76D24204CE38200BD138E /* Components */,
 				39891E28204A2FAA00A9649E /* Global */,
 				3914D5792049BAFB00B8FD2F /* Network */,
 				3914D5312049B2F900B8FD2F /* Persistence */,
@@ -474,21 +477,15 @@
 		393F681C204C375E00E1EEEF /* View */ = {
 			isa = PBXGroup;
 			children = (
-				393F6848204C57DB00E1EEEF /* TitleLabel.h */,
-				393F6849204C57DB00E1EEEF /* TitleLabel.m */,
 				393F681D204C37E500E1EEEF /* DetailCell.h */,
 				393F681E204C37E500E1EEEF /* DetailCell.m */,
 				393F681F204C37E500E1EEEF /* DetailCell.xib */,
 				393F6834204C3CF900E1EEEF /* BaseCounterView.h */,
 				393F6835204C3CF900E1EEEF /* BaseCounterView.m */,
-				393F684E204C587E00E1EEEF /* SubtitleLabel.h */,
-				393F684F204C587E00E1EEEF /* SubtitleLabel.m */,
 				393F6851204C67F000E1EEEF /* ChronometerButton.h */,
 				393F6852204C67F000E1EEEF /* ChronometerButton.m */,
 				393F6854204C71A800E1EEEF /* ChronometerLabel.h */,
 				393F6855204C71A800E1EEEF /* ChronometerLabel.m */,
-				393F685A204C7C6C00E1EEEF /* BlueButton.h */,
-				393F685B204C7C6C00E1EEEF /* BlueButton.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -496,7 +493,6 @@
 		3978EB7F204C937E000D49D8 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				3978EB80204C938F000D49D8 /* NewCoffeeFormView.h */,
 				3978EB85204C93CF000D49D8 /* TextFieldView.h */,
 				3978EB86204C93CF000D49D8 /* TextFieldView.m */,
 				3978EB88204C93DC000D49D8 /* TextFieldView.xib */,
@@ -587,6 +583,8 @@
 				393F683B204C415E00E1EEEF /* BKBaseCollectionViewCell+Category.m */,
 				3978EB8D204C97E4000D49D8 /* UIView+Category.h */,
 				3978EB8E204C97E4000D49D8 /* UIView+Category.m */,
+				39A76D25204CE4BA00BD138E /* UIAlertController+Category.h */,
+				39A76D26204CE4BA00BD138E /* UIAlertController+Category.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -644,6 +642,19 @@
 				39891E27204A24CE00A9649E /* GlobalTypeDef.h */,
 			);
 			path = Global;
+			sourceTree = "<group>";
+		};
+		39A76D24204CE38200BD138E /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				393F684E204C587E00E1EEEF /* SubtitleLabel.h */,
+				393F684F204C587E00E1EEEF /* SubtitleLabel.m */,
+				393F685A204C7C6C00E1EEEF /* BlueButton.h */,
+				393F685B204C7C6C00E1EEEF /* BlueButton.m */,
+				393F6848204C57DB00E1EEEF /* TitleLabel.h */,
+				393F6849204C57DB00E1EEEF /* TitleLabel.m */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		B250268873966982196ECFC6 /* Frameworks */ = {
@@ -960,6 +971,7 @@
 				39891E152049FD7F00A9649E /* CapsuleCell.m in Sources */,
 				393F6859204C7C5200E1EEEF /* CapsuleButton.m in Sources */,
 				393F6847204C52DE00E1EEEF /* BaseImageView.m in Sources */,
+				39A76D27204CE4BA00BD138E /* UIAlertController+Category.m in Sources */,
 				3914D4F820497F1000B8FD2F /* ViewController.m in Sources */,
 				393F685C204C7C6C00E1EEEF /* BlueButton.m in Sources */,
 				39891E26204A19F800A9649E /* NewCapsuleViewController.m in Sources */,
