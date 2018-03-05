@@ -15,7 +15,7 @@
     
     Coffee *coffee = (Coffee *) object;
     
-    self.titleLabel.text = coffee.name;
+    self.titleLabel.text = [coffee.name capitalizedString];
 }
 
 @end
